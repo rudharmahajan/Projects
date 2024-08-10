@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery - Restaurant Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+     body{
+        background: url("ba.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        height: 130vh;
+    }
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track{ background: #faf6f6;}
+    ::-webkit-scrollbar-thumb{ background: #917d82;}
+    .navbar{
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-right: 0px; padding-left: 100px;
+        background: rgb(240, 205, 162);
+        padding-top: 15px;
+    }
+    .navdiv{
+        display: flex; align-items: center; justify-content: space-between;
+        margin-left: 100px;
+        
+
+    }
+    
+    li{
+        list-style: none; display: inline-block; 
+    }
+    li a{
+        font-size: 20px; font-weight: bold; margin-right: 65px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    
+    
+    main,li{
+        display: inline-block;
+    }
+    footer{
+        font-size: larger;
+    }
+    h1{
+        font-size: 50px;
+        border: 2px;
+        color: rgba(235, 51, 51, 0.856);
+    }
+    img {
+  vertical-align: center;
+  width: auto;
+  height: auto;
+  margin-left :100px;
+}
+.mySlides img {
+  width: 100%;
+  height: 550px; /* adjust the height to your desired value */
+  object-fit: cover;
+}
+.column img {
+  width: 100%;
+  height: 130px; /* adjust the height to your desired value */
+  object-fit: cover;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: relative;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: rgb(245, 236, 236);
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+   
+    
+</style>
+<body>
+    <header class="header"> 
+       
+        <nav class="navbar">
+            <div class="navdiv"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul></div>
+        </nav>
+    </header>
+    <main>
+      <h2 style="text-align:center"><b><u>OUR GALLERY</u></b></h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="C:\Users\win\Desktop\project\resturant4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="C:\Users\win\Desktop\project\restaurante-1.webp" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="C:\Users\win\Desktop\project\resturant3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="C:\Users\win\Desktop\project\restaarant.jpg" style="width:100%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\win\Desktop\project\resturant4.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\win\Desktop\project\restaurante-1.webp" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\win\Desktop\project\resturant3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="C:\Users\win\Desktop\project\restaarant.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+    </main>
+    <footer>
+        <p style="color:bisque;">&copy; 2024 Restaurant Website</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

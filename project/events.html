@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Restaurant Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        
+        body{ background: url("e.jpg") no-repeat; background-size: cover;
+         background-position: center; background-origin: border-box; 
+         height: 140vh; }
+         ::-webkit-scrollbar{ width: 20px; }
+          ::-webkit-scrollbar-track{ background: #faf6f6;}
+           ::-webkit-scrollbar-thumb{ background: #917d82;}
+            .navbar{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            padding-right: 0px;
+             padding-left: 0px;
+              background: rgb(17, 13, 0); color: bisque; 
+            }
+
+li{
+    list-style: none; display: inline-block; 
+}
+li a{
+    font-size: 25px; font-weight: bold; margin-left: 75px;
+    color: bisque;
+}
+img{
+    width: 250px; height: 250px;
+}
+main,li{
+    display: inline-block;
+}
+.row{
+    margin-left: 10px;
+  
+}
+.thumbnail img {
+  width: 290px;
+  height: 160px;
+  object-fit: cover;
+}.thumbnail {
+  height: 400px; /* adjust the height to your liking */
+  overflow: hidden;
+}
+.caption {
+  height: 350px; /* adjust the height to your liking */
+  overflow: hidden;
+  
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* adjust the number of lines to your liking */
+  -webkit-box-orient: vertical;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header"> 
+        
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navdiv">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><br><br>
+    </header>
+    <main>
+        <h1><b><u><center>Upcoming Events</center></u></b></h1><br><br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="C:\Users\win\Desktop\project\sin.jpg" alt="EVENT 1" class="img-responsive">
+                    <div class="caption">
+                        <h2>SINGLE’S NIGHT</h2>
+                        <p>Consider hosting a singles’ night to help singles meet new people at our restaurant. It provides oppourtunity to  communicate among peoples.</p><br><br><br><br>
+                        <p><br>Date: JULY 12, 2024</p><br>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="C:\Users\win\Desktop\project\event2.png" alt="EVENT 2" class="img-responsive">
+                    <div class="caption">
+                        <h2>HAPPY HOUR</h2>
+                        <p>No matter what you call it – beer o'clock,social hour,cost-effective cocktails–happy hour is that magical time of day. </p><br>
+                        <p>Date: JULY 25, 2024</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="C:\Users\win\Desktop\project\open.webp" alt="EVENT 3" class="img-responsive">
+                    <div class="caption">
+                        <h2>OPEN MIC NIGHT</h2>
+                        <p>An open mic night is a night,where you are able to perform without prior bookings, in front of a live audience.</p><br>
+                        <p>Date: AUGUST 02, 2024</p>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="C:\Users\win\Desktop\project\event4.webp" alt="EVENT 4" class="img-responsive">
+                    <div class="caption">
+                        <h2> CELEBRATE OUR HISTORY</h2>
+                        <p>The lYFE Kitchen,celebrates Freedom Day with a special high tea , honoring the country’s history an independent nation.</p><br>
+                        <p><br>Date: AUGUST 15, 2024</p><br>
+                        <button class="btn btn-primary">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron" style="padding-left: 80px;">
+            <h1>Stay Connected!</h1>
+            <p>Follow us on social media to stay up-to-date on our latest events and promotions!</p>
+            <a href="#" class="btn btn-social btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+            <a href="#" class="btn btn-social btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+            <a href="#" class="btn btn-social btn-instagram"><i class="fa fa-instagram"></i> Instagram</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Website</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+          var maxHeight = 0;
+          $(".caption").each(function() {
+            maxHeight = Math.max(maxHeight, $(this).height());
+          });
+          $(".caption").height(maxHeight);
+        });
+      </script>
+      <script>
+        $(document).ready(function() {
+          var maxHeight = 0;
+          $(".thumbnail").each(function() {
+            maxHeight = Math.max(maxHeight, $(this).height());
+          });
+          $(".thumbnail").height(maxHeight);
+        });
+      </script>
+</body>
+</html>

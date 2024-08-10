@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Restaurant Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header class="header"> 
+        
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <style>
+    body{
+        background: url("reservation.jpeg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-origin: border-box;
+        height: 130vh;
+    }
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track{ background: #faf6f6;}
+    ::-webkit-scrollbar-thumb{ background: #917d82;}
+   .navbar{
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-right: 0px; padding-left: 30px; 
+        background: rgb(121, 211, 99);
+    }
+   .navdiv{
+        display: flex; align-items: center; justify-content: space-between;
+
+    }
+    li{
+        list-style: none; display: inline-block; 
+    }
+    li a{
+        font-size: 20px; font-weight: bold; margin-left: 100px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    img{
+        width: 100px; height: 100px;
+    }
+    h1{
+        margin-top: 150px;
+    }
+    footer{
+        text-align: end;
+        margin-top: 110px;
+    }
+     
+     .row{
+        font-size: 20px;
+        color: black;
+        border-color: black;
+        border-radius: 0%;
+        border-width: 2px;
+     }
+     .form-container {
+        border: 1px solid #179edd;
+        padding: 20px;
+        border-radius: 20px;
+        color: rgb(202, 240, 247);
+        background-color: rgb(31, 18, 2);
+        border-color: rgb(21, 179, 241);
+    }
+    </style>
+    <main>
+        <h1 class="text-center"><u><b>RESERVATION FORM</b></u></h1><br>
+        <div class="container">
+            <div class="row" style="border: #2d90f3;">
+                <div class="form-container">
+                    <form action="connect.php" method="post">
+                        <table class="table table-bordered" style="border: #2d90f3;">
+                            <tr>
+                                <td><b>NAME:</b></td>
+                                <td><input type="text" placeholder="ENTER YOUR NAME" name="name" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">EMAIL :</label></td>
+                                <td><input type="email" placeholder="example@542" name="email" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="phone">PHONE :</label></td>
+                                <td><input type="tel" placeholder="89*******" name="phone" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="date">DATE:</label></td>
+                                <td><input type="date" id="date" name="date" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="time">TIME:</label></td>
+                                <td><input type="time" id="time" name="time" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="submit" class="btn btn-success form-control"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="text-left">&copy; 2024 Restaurant Website</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
